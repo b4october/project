@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입 페이지</title>
+    <style>
+        body { padding-left: 30px; }
+        div { margin-left: 200px; margin-top: 15px;}
+        label { display: inline-block; margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+        span { color: red; }
+    </style>
 </head>
 <body>
 <h2>취업 정보 계정 만들기</h2>
-<p>* 필수 입력 항목</p>
-<p>기본 정보</p>
+<p style="color: red; font-size: 10pt;">* 필수 입력 항목</p>
+<p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;">기본 정보</p>
 <form>
     <p>
-        <label>이름 * </label>
+        <label>이름<span>*</span> </label>
         <input type="text" size="8">
     </p>
     <p>
-        <label>이메일 * </label>
+        <label>이메일<span>*</span> </label>
         <input type="email" size="15" placeholder="id@domain_name">
     </p>
     <p>
-        <label>암호 * </label>
+        <label>암호<span>*</span> </label>
         <input type="password" size="12">
     </p>
     <p>
-        <label>암호 확인 * </label>
+        <label>암호 확인<span>*</span> </label>
         <input type="password" size="12">
     </p>
     <p>
-        <label>모바일 폰 * </label>
+        <label>모바일 폰<span>*</span> </label>
         <input type="tel" size="13" placeholder="010-0000-0000">
     </p>
     <p>
@@ -34,22 +40,22 @@
         <input type="url" size="30" placeholder="http://">
     </p>
     <p>
-        <label>주소 * </label>
+        <label>주소<span>*</span> </label>
         <input type="text" size="30">
     </p>
 </form>
-<p>학 력</p>
+<p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;">학 력</p>
 <form>
     <p>
-        <label>학교 명 * </label>
+        <label>학교 명<span>*</span> </label>
         <input type="text" size="12">
     </p>
     <p>
-        <label>전공 * </label>
+        <label>전공<span>*</span> </label>
         <input type="text" size="12">
     </p>
     <p>
-        <label>졸업 여부 * </label>
+        <label>졸업 여부<span>*</span> </label>
         <select>
             <option value="0">---선택---</option>
             <option value="1">졸업예정</option>
@@ -61,7 +67,7 @@
         <input type="date">
     </p>
 </form>
-<p>업무 경력</p>
+<p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;">업무 경력</p>
 <form>
     <p>
         <label>근무업체명 </label>
@@ -80,7 +86,7 @@
         <input type="number" min="0" max="10" step="0.5">년
     </p>
 </form>
-<p>자기소개서</p>
+<p style="font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;">자기소개서</p>
 <form>
     <p>
         <label>첨부 파일 </label>
