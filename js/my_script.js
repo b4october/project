@@ -1,18 +1,19 @@
-$('0').on('click', function() {
-  $('.slide-container').css('transform', 'translateX(0vw)');
+const prevButton = document.querySelector(".carousel-control-prev");
+const nextButton = document.querySelector(".carousel-control-next");
+const carousel = document.querySelector(".carousel-inner");
+
+let index = 0;
+
+prevButton.addEventLister('onclick', () => {
+    if (index === 0) return;
+    index -= 1;
+
+    carousel.style.transform = translate3d(-${500 * index}px, 0, 0);
 });
 
-$('1').on('click', function() {
-  $('.slide-container').css('transform', 'translateX(-100vw)');
-});
+nextButton.addEventListener('onclick', () => {
+    if (index === 2) return;
+    index += 1;
 
-$('2').on('click', function() {
-  $('.slide-container').css('transform', 'translateX(-200vw)');
+    carousel.style.transfrom = translate3d(-${500 * index}px, 0, 0);
 });
-bullets.forEach((bullet, index) => {
-    bullet.addEventListener('click', () => {
-        showSlide(index);
-    });
-});
-
-showSlide(0);

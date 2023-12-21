@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
-:root {
-    --bs-home: #7192BF;
+* {
+    box-sizing: border-box;
+}
+
+#v-pills-tab {
+    background-color: beige;
+    color: white;
 }
